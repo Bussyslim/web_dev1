@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Welcome to our accessible and SEO-friendly sample website. Learn more about semantic HTML5 structure." />
+  <meta name="keywords" content="HTML5, semantic, accessibility, SEO" />
+  <meta name="author" content="Your Name" />
+  <title>Accessible & Semantic HTML5 Example</title>
+
+  <!-- Open Graph for better sharing on social media -->
+  <meta property="og:title" content="Accessible & Semantic HTML5 Example" />
+  <meta property="og:description" content="A simple demo of semantic HTML with accessibility and SEO best practices." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com/" />
+  <meta property="og:image" content="https://example.com/og-image.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <header role="banner">
+    <nav role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="#main-content">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Semantic HTML5 and Accessibility</h1>
+    <p>A demo page showcasing best practices in web structure and accessibility.</p>
+  </header>
+
+  <main id="main-content" role="main">
+    <section aria-labelledby="introduction">
+      <h2 id="introduction">Introduction</h2>
+      <p>
+        Semantic HTML5 elements improve content structure, accessibility, and search engine optimization. This page demonstrates how to properly use these elements.
+      </p>
+    </section>
+
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About This Page</h2>
+      <p>
+        This single HTML file includes:
+      </p>
+      <ul>
+        <li>Semantic structure using elements like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code></li>
+        <li>Clear and logical heading hierarchy</li>
+        <li>Accessibility features including ARIA roles and labels</li>
+        <li>SEO-friendly metadata and content</li>
+      </ul>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Us</h2>
+      <form action="#" method="post" aria-describedby="contact-description">
+        <p id="contact-description">Fill out the form below to get in touch with us.</p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required aria-required="true" /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required aria-required="true" /><br />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea><br />
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Semantic Web Co. All rights reserved.</p>
+    <nav aria-label="Footer navigation">
+      <ul>
+        <li><a href="#main-content">Back to top</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
